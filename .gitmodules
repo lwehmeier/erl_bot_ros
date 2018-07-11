@@ -1,0 +1,33 @@
+[submodule "src/tf_bot"]
+	path = src/tf_bot
+	url = git@github.com:lwehmeier/tf_bot.git
+[submodule "src/mouse_odom"]
+	path = src/mouse_odom
+	url = git@github.com:lwehmeier/mouse_odom.git
+[submodule "src/gyro_odom"]
+	path = src/gyro_odom
+	url = git@github.com:lwehmeier/gyro_odom.git
+[submodule "src/erlang_bridge"]
+	path = src/erlang_bridge
+	url = git@github.com:lwehmeier/erlang_bridge.git
+[submodule "src/combined_odom"]
+	path = src/combined_odom
+	url = git@github.com:lwehmeier/combined_odom.git
+[submodule "src/hector_slam"]
+	path = src/hector_slam
+	url = https://github.com/tu-darmstadt-ros-pkg/hector_slam
+[submodule "src/launch_slam"]
+	path = src/launch_slam
+	url = git@github.com:lwehmeier/launch_slam.git
+[submodule "src/slam_gmapping"]
+	path = src/slam_gmapping
+	url = https://github.com/ros-perception/slam_gmapping.git
+[submodule "src/openslam_gmapping"]
+	path = src/openslam_gmapping
+	url = https://github.com/ros-perception/openslam_gmapping.git
+[submodule "src/rplidar_ros"]
+	path = src/rplidar_ros
+	url = https://github.com/robopeak/rplidar_ros
+[submodule "src/ydlidar"]
+	path = src/ydlidar
+	url = https://github.com/EAIBOT/ydlidar
