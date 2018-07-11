@@ -30,4 +30,4 @@
 	url = https://github.com/robopeak/rplidar_ros
 [submodule "src/ydlidar"]
 	path = src/ydlidar
-	url = https://github.com/EAIBOT/ydlidar
+	url = git@github.com:lwehmeier/ydlidar
