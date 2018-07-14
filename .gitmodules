@@ -31,3 +31,27 @@
 [submodule "src/ydlidar"]
 	path = src/ydlidar
 	url = git@github.com:lwehmeier/ydlidar
+[submodule "src/navigation"]
+	path = src/navigation
+	url = git@github.com:ros-planning/navigation.git
+[submodule "src/teb_local_planner"]
+	path = src/teb_local_planner
+	url = git@github.com:lwehmeier/teb_local_planner
+[submodule "src/eband_local_planner"]
+	path = src/eband_local_planner
+	url = https://github.com/utexas-bwi/eband_local_planner
+[submodule "src/costmap_converter"]
+	path = src/costmap_converter
+	url = https://github.com/rst-tu-dortmund/costmap_converter
+[submodule "src/base_controller"]
+	path = src/base_controller
+	url = git@github.com:lwehmeier/base_controller.git
+[submodule "src/bot_2dnav"]
+	path = src/bot_2dnav
+	url = git@github.com:lwehmeier/bot_2dnav
+[submodule "src/coordinate_mover"]
+	path = src/coordinate_mover
+	url = git@github.com:lwehmeier/coordinate_mover.git
+[submodule "src/slam_tf_buffer"]
+	path = src/slam_tf_buffer
+	url = git@github.com:lwehmeier/slam_tf_buffer
