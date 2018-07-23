@@ -64,3 +64,6 @@
 [submodule "src/odom_estimator"]
 	path = src/odom_estimator
 	url = git@github.com:lwehmeier/odom_estimator
+[submodule "src/hector_covariance_calculator"]
+	path = src/hector_covariance_calculator
+	url = git@github.com:lwehmeier/hector_covariance_calculator.git
