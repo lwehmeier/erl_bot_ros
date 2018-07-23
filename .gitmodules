@@ -55,3 +55,12 @@
 [submodule "src/slam_tf_buffer"]
 	path = src/slam_tf_buffer
 	url = git@github.com:lwehmeier/slam_tf_buffer
+[submodule "src/energy_monitor"]
+	path = src/energy_monitor
+	url = git@github.com:lwehmeier/energy_monitor
+[submodule "src/vl6180_sim"]
+	path = src/vl6180_sim
+	url = git@github.com:lwehmeier/vl6180_sim
+[submodule "src/odom_estimator"]
+	path = src/odom_estimator
+	url = git@github.com:lwehmeier/odom_estimator
