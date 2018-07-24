@@ -67,3 +67,6 @@
 [submodule "src/hector_covariance_calculator"]
 	path = src/hector_covariance_calculator
 	url = git@github.com:lwehmeier/hector_covariance_calculator.git
+[submodule "src/battery_warner"]
+	path = src/battery_warner
+	url = git@github.com:lwehmeier/battery_warner
