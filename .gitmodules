@@ -70,3 +70,15 @@
 [submodule "src/battery_warner"]
 	path = src/battery_warner
 	url = git@github.com:lwehmeier/battery_warner
+[submodule "src/probabilistic_collision_checker"]
+	path = src/probabilistic_collision_checker
+	url = git@github.com:lwehmeier/probabilistic_collision_checker
+[submodule "src/vl6180"]
+	path = src/vl6180
+	url = git@github.com:lwehmeier/vl6180_node
+[submodule "src/local_pathfinder"]
+	path = src/local_pathfinder
+	url = git@github.com:lwehmeier/local_pathfinder
+[submodule "src/ros-system-monitor"]
+	path = src/ros-system-monitor
+	url = git@github.com:lwehmeier/ros-system-monitor
