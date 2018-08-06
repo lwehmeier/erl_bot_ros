@@ -82,3 +82,9 @@
 [submodule "src/ros-system-monitor"]
 	path = src/ros-system-monitor
 	url = git@github.com:lwehmeier/ros-system-monitor
+[submodule "src/hector_localisation"]
+	path = src/hector_localisation
+	url = git@github.com:lwehmeier/hector_localisation
+[submodule "src/estop_mgr"]
+	path = src/estop_mgr
+	url = git@github.com:lwehmeier/estop_mgr
