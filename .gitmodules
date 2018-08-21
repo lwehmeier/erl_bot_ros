@@ -88,3 +88,6 @@
 [submodule "src/estop_mgr"]
 	path = src/estop_mgr
 	url = git@github.com:lwehmeier/estop_mgr
+[submodule "src/local_obj_detector"]
+	path = src/local_obj_detector
+	url = git@github.com:lwehmeier/local_obj_detector

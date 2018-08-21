@@ -1,0 +1,51 @@
+?start: name "\n" restrict "\n" instruction+
+
+?name: "PLAN" CNAME -> name
+?restrict: "RESTRICT" map_res CNAME
+  | "RESTRICT" map_res grid
+?map_res: FLOAT -> map_res
+?grid: "[" INT ("," INT)* "]"
+?instruction: speed "\n" | move "\n"| until | stop "\n"| rot "\n"| path "\n"| path_t "\n"|trajectory "\n" | sleep "\n"
+?speed: "SPEED" float float float
+?move: "MOVE" float float [frame]
+?until: "UNTIL" event "DO" instruction
+?stop: "STOP"
+?rot: "ROTATE" float [frame]
+?path: "PATHPLAN" point -> path
+?path_t: "PATHPLAN" "[" point ("," point)* "]" -> path_t
+?trajectory: "TRAJECTORY" "[" point ("," point)* "]" [frame]
+?point: "(" float float [float] ")"
+?event: obstacle | distance
+?distance: "DISTANCE" float
+?obstacle: "OBSTACLE" direction
+?direction: left | right| front
+?left: "LEFT"
+?right: "RIGHT"
+?front: "FRONT"
+?frame: frame_map | frame_bot | frame_odom
+?frame_map: "map" | "MAP"
+?frame_odom: "ODOM" | "odom"
+?frame_bot: "bot" | "BOT" | "base_footprint" | "BASE_FOOTPRINT"
+?sleep: sleep_atom FLOAT
+?sleep_atom: "SLEEP" | "sleep"
+?float: [negate] FLOAT
+?negate: "-"
+
+
+?sum: product
+  | sum "+" product   -> add
+  | sum "-" product   -> sub
+?product: atom
+  | product "*" atom  -> mul
+  | product "/" atom  -> div
+?atom: NUMBER           -> number
+  | "-" atom         -> neg
+  | CNAME             -> var
+  | "(" sum ")"
+%import common.CNAME
+%import common.INT
+%import common.FLOAT
+%import common.FLOAT -> _FLOAT
+%import common.NUMBER
+%import common.WS_INLINE
+%ignore WS_INLINE
