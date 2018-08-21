@@ -16,12 +16,13 @@
 ?trajectory: "TRAJECTORY" "[" point ("," point)* "]" [frame]
 ?point: "(" float float [float] ")"
 ?event: obstacle | distance
-?distance: "DISTANCE" float
+?distance: "DISTANCE" float -> distance
 ?obstacle: "OBSTACLE" direction
-?direction: left | right| front
+?direction: left | right| front | rear
 ?left: "LEFT"
 ?right: "RIGHT"
 ?front: "FRONT"
+?rear: "REAR"
 ?frame: frame_map | frame_bot | frame_odom
 ?frame_map: "map" | "MAP"
 ?frame_odom: "ODOM" | "odom"

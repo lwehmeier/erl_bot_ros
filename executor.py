@@ -132,6 +132,26 @@ def run(inst):
             ros_mgr.trajectoryplan(points)
             ros_mgr.wfc()
         return
+    if inst.data == 'until':
+        print(inst.children)
+        run(inst.children[1])
+        if inst.children[0].data == "left":
+            ros_mgr.wfdir("Left")
+            return
+        if inst.children[0].data == "right":
+            ros_mgr.wfdir("Right")
+            return
+        if inst.children[0].data == "front":
+            ros_mgr.wfdir("Front")
+            return
+        if inst.children[0].data == "rear":
+            ros_mgr.wfdir("Rear")
+            return
+        if inst.children[0].data == "distance":
+            ros_mgr.wfdist(float(inst.children[0].children[0].value))
+            return
+        print("ERROR: UNKNOWN EVENT IN UNTIL DO")
+        return
 
 plan = open("plan.dsl").read()
 #print(plan)
