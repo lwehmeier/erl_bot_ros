@@ -1,5 +1,6 @@
 #!/usr/bin/env python2
 from lark import Lark, Transformer
+import sys
 import time
 ROS=True
 if ROS:
@@ -153,7 +154,10 @@ def run(inst):
         print("ERROR: UNKNOWN EVENT IN UNTIL DO")
         return
 
-plan = open("plan.dsl").read()
+if len(sys.argv) != 2:
+    print("USAGE: " + sys.argv[0] + " /path/to/plan.dsl")
+    exit()
+plan = open(sys.argv[1]).read()
 #print(plan)
 parser = Lark(open("dsl.ebnf"), parser="lalr")
 tree=parser.parse(plan)

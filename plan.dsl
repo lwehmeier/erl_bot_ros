@@ -1,0 +1,11 @@
+PLAN MyFirstPlan
+RESTRICT 6.4 [0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0]
+SPEED -0.04 0.0 -0.08
+SLEEP 5.0
+STOP
+MOVE 0.0 -0.0 map
+ROTATE 0.0 map
+MOVE 0.0 0.0 map
+TRAJECTORY [(0.0 -0.3), (1.0 0.0 1.4), (0.0 0.0 0.0)] map
+PATHPLAN (-1.5 0.0 0.0)
+PATHPLAN [ (0.0 0.5 0.8), (0.0 0.0 0.0) ]
